@@ -1,4 +1,5 @@
-import { ArrowUpRight, Mail, MapPin } from "lucide-react"
+import { ArrowUpRight, Mail, MapPin, Terminal } from "lucide-react"
+import { useModals } from "../context/useModals"
 
 const serviceLinks = ["AI Automation", "AI Agents", "Workflow Automation", "Data & Analytics"]
 const companyLinks = [
@@ -12,13 +13,21 @@ const companyLinks = [
 
 function SocialLink({ href, label, children }) {
   return (
-    <a href={href} target="_blank" rel="noreferrer" aria-label={label} className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-[12px] font-semibold text-slate-300 transition-all duration-300 hover:border-white/[0.10] hover:bg-white/[0.04] hover:text-[#d4d4d8]">
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      aria-label={label}
+      className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-[12px] font-semibold text-slate-300 transition-all duration-300 hover:border-white/[0.10] hover:bg-white/[0.04] hover:text-[#d4d4d8]"
+    >
       {children}
     </a>
   )
 }
 
 export default function Footer() {
+  const { openBooking, openContact, openAdmin } = useModals()
+
   const scrollTo = (id) => {
     const element = document.getElementById(id)
     if (element) {
@@ -29,31 +38,37 @@ export default function Footer() {
   return (
     <footer className="relative overflow-hidden border-t border-white/10 bg-[#030303] px-5 pb-8 pt-20 sm:px-6 md:px-8 md:pt-28">
       <div className="pointer-events-none absolute left-[12%] top-0 h-[380px] w-[380px] rounded-full bg-white/[0.02] blur-[140px]" />
-      <div className="pointer-events-none absolute bottom-0 right-[8%] h-[300px] w-[300px] rounded-full bg-blue-500/5 blur-[140px]" />
+      <div className="pointer-events-none absolute bottom-0 right-[8%] h-[300px] w-[300px] rounded-full bg-white/[0.01] blur-[140px]" />
 
       <div className="relative mx-auto max-w-7xl">
         <div className="interactive-tilt relative overflow-hidden rounded-[30px] border border-white/[0.06] bg-white/[0.02] p-7 md:p-10 lg:p-12">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_50%,rgba(34,211,238,0.08),transparent_40%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_50%,rgba(255,255,255,0.03),transparent_40%)]" />
           <div className="relative z-10 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
-              <p className="text-[10px] uppercase tracking-[0.18em] text-[#d4d4d8]">Build what’s next</p>
+              <p className="text-[10px] uppercase tracking-[0.18em] text-[#d4d4d8]">Build what&apos;s next</p>
               <h2 className="mt-5 max-w-3xl text-[2.3rem] font-extrabold leading-none tracking-[-0.06em] text-white sm:text-[3rem] md:text-[3.6rem]">
                 Ready to make your business
                 <span className="mt-2 block text-slate-300">work smarter?</span>
               </h2>
-              <p className="mt-4 max-w-xl text-[15px] leading-7 text-slate-300">Tell us where repetitive work, fragmented systems, or slow decisions are holding your team back.</p>
+              <p className="mt-4 max-w-xl text-[15px] leading-7 text-slate-300">
+                Tell us where repetitive work, fragmented systems, or slow decisions are holding your team back.
+              </p>
             </div>
 
-            <a href="mailto:hello@sthayuventures.com?subject=Discovery%20Call%20with%20Sthayu" className="inline-flex items-center justify-center gap-3 rounded-full border border-white/[0.08] bg-white/[0.04] px-6 py-3.5 text-[11px] font-medium uppercase tracking-[0.16em] text-[#d4d4d8] transition-all duration-300 hover:border-white/[0.12] hover:bg-white/[0.06]">
-              Start a conversation
+            <button
+              type="button"
+              onClick={() => openContact()}
+              className="inline-flex items-center justify-center gap-3 rounded-full border border-white/[0.08] bg-white/[0.04] px-6 py-3.5 text-[11px] font-medium uppercase tracking-[0.16em] text-[#d4d4d8] transition-all duration-300 hover:border-white/[0.12] hover:bg-white/[0.06] cursor-pointer"
+            >
+              <span>Start a conversation</span>
               <ArrowUpRight size={14} />
-            </a>
+            </button>
           </div>
         </div>
 
         <div className="grid gap-12 py-16 md:grid-cols-[1.4fr_0.8fr_0.8fr_0.8fr] md:py-20">
           <div className="max-w-sm">
-            <button type="button" onClick={() => scrollTo("hero")} className="flex items-center gap-3 text-left">
+            <button type="button" onClick={() => scrollTo("hero")} className="flex items-center gap-3 text-left cursor-pointer">
               <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/[0.08] bg-white/[0.04] text-lg font-extrabold text-[#d4d4d8]">S</div>
               <div className="leading-none">
                 <div className="text-[1.2rem] font-extrabold tracking-[-0.06em] text-white">Sthayu</div>
@@ -66,7 +81,11 @@ export default function Footer() {
             </p>
 
             <div className="mt-6 flex items-center gap-3">
-              <a href="mailto:hello@sthayuventures.com" aria-label="Email Sthayu" className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-300 transition-colors hover:border-white/[0.10] hover:bg-white/[0.04] hover:text-[#d4d4d8]">
+              <a
+                href="mailto:hello@sthayuventures.com"
+                aria-label="Email Sthayu"
+                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-300 transition-colors hover:border-white/[0.10] hover:bg-white/[0.04] hover:text-[#d4d4d8]"
+              >
                 <Mail size={14} />
               </a>
               <SocialLink href="https://www.linkedin.com" label="Sthayu on LinkedIn">in</SocialLink>
@@ -84,7 +103,14 @@ export default function Footer() {
             <p className="text-[10px] uppercase tracking-[0.18em] text-slate-400">Solutions</p>
             <div className="mt-6 space-y-3.5">
               {serviceLinks.map((item) => (
-                <button key={item} type="button" onClick={() => scrollTo("services")} className="block text-left text-[13px] text-slate-300 transition-colors hover:text-[#d4d4d8]">{item}</button>
+                <button
+                  key={item}
+                  type="button"
+                  onClick={() => scrollTo("services")}
+                  className="block text-left text-[13px] text-slate-300 transition-colors hover:text-[#d4d4d8] cursor-pointer"
+                >
+                  {item}
+                </button>
               ))}
             </div>
           </div>
@@ -93,7 +119,14 @@ export default function Footer() {
             <p className="text-[10px] uppercase tracking-[0.18em] text-slate-400">Company</p>
             <div className="mt-6 space-y-3.5">
               {companyLinks.map((item) => (
-                <button key={item.label} type="button" onClick={() => scrollTo(item.id)} className="block text-left text-[13px] text-slate-300 transition-colors hover:text-[#d4d4d8]">{item.label}</button>
+                <button
+                  key={item.label}
+                  type="button"
+                  onClick={() => scrollTo(item.id)}
+                  className="block text-left text-[13px] text-slate-300 transition-colors hover:text-[#d4d4d8] cursor-pointer"
+                >
+                  {item.label}
+                </button>
               ))}
             </div>
           </div>
@@ -101,20 +134,42 @@ export default function Footer() {
           <div>
             <p className="text-[10px] uppercase tracking-[0.18em] text-slate-400">Connect</p>
             <div className="mt-6 space-y-3.5">
-              <button type="button" onClick={() => scrollTo("contact")} className="block text-left text-[13px] text-slate-300 transition-colors hover:text-[#d4d4d8]">Contact</button>
-              <a href="mailto:hello@sthayuventures.com?subject=Discovery%20Call%20with%20Sthayu" className="block text-[13px] text-slate-300 transition-colors hover:text-[#d4d4d8]">Book a Discovery Call</a>
-              <button type="button" className="block text-left text-[13px] text-slate-300 transition-colors hover:text-[#d4d4d8]">Privacy</button>
-              <button type="button" className="block text-left text-[13px] text-slate-300 transition-colors hover:text-[#d4d4d8]">Terms</button>
+              <button
+                type="button"
+                onClick={() => openContact()}
+                className="block text-left text-[13px] text-slate-300 transition-colors hover:text-[#d4d4d8] cursor-pointer"
+              >
+                Contact
+              </button>
+              <button
+                type="button"
+                onClick={() => openBooking()}
+                className="block text-left text-[13px] text-slate-300 transition-colors hover:text-[#d4d4d8] cursor-pointer"
+              >
+                Book a Discovery Call
+              </button>
+              <button
+                type="button"
+                onClick={() => openAdmin()}
+                className="flex items-center gap-1.5 text-left text-[13px] text-slate-400 hover:text-white transition-colors cursor-pointer"
+              >
+                <Terminal size={12} />
+                <span>Command Console</span>
+              </button>
             </div>
           </div>
         </div>
 
         <div className="flex flex-col gap-4 border-t border-white/10 py-6 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/[0.04]"><Mail size={13} className="text-[#d4d4d8]" /></div>
+            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/[0.04]">
+              <Mail size={13} className="text-[#d4d4d8]" />
+            </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.18em] text-slate-400">Let&apos;s build</p>
-              <a href="mailto:hello@sthayuventures.com" className="mt-1 block text-[14px] text-slate-300 transition-colors hover:text-[#d4d4d8]">hello@sthayuventures.com</a>
+              <a href="mailto:hello@sthayuventures.com" className="mt-1 block text-[14px] text-slate-300 transition-colors hover:text-[#d4d4d8]">
+                hello@sthayuventures.com
+              </a>
             </div>
           </div>
 
@@ -125,11 +180,16 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col gap-5 pt-7 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-[10px] uppercase tracking-[0.14em] text-slate-500">© {new Date().getFullYear()} Sthayu Ventures. All rights reserved.</p>
+          <p className="text-[10px] uppercase tracking-[0.14em] text-slate-500">
+            © {new Date().getFullYear()} Sthayu Ventures. All rights reserved.
+          </p>
           <div className="flex items-center gap-5 text-[10px] uppercase tracking-[0.15em] text-slate-500">
-            <button type="button" className="transition-colors hover:text-slate-200">Privacy</button>
-            <button type="button" className="transition-colors hover:text-slate-200">Terms</button>
-            <button type="button" onClick={() => scrollTo("hero")} className="group inline-flex items-center gap-2 transition-colors hover:text-[#d4d4d8]">
+            <span className="text-[11px] text-slate-500">SOC2 & HIPAA Compliant Data Tier</span>
+            <button
+              type="button"
+              onClick={() => scrollTo("hero")}
+              className="group inline-flex items-center gap-2 transition-colors hover:text-[#d4d4d8] cursor-pointer"
+            >
               Back to top
               <ArrowUpRight size={11} className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </button>

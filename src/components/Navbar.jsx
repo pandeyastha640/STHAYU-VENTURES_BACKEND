@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { motion } from "motion/react"
 import { ArrowRight, Menu, X } from "lucide-react"
+import { useModals } from "../context/useModals"
 
 const navLinks = [
   { label: "Solutions", id: "services" },
@@ -12,6 +13,7 @@ const navLinks = [
 ]
 
 export default function Navbar() {
+  const { openBooking } = useModals()
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [activeSection, setActiveSection] = useState("")
@@ -115,7 +117,7 @@ export default function Navbar() {
             </button>
             <button
               type="button"
-              onClick={() => goTo("contact")}
+              onClick={() => openBooking()}
               className="btn-primary shimmer-on-hover text-[13px] py-2 px-5 cursor-pointer"
             >
               <span>Book a Call</span>
@@ -169,7 +171,10 @@ export default function Navbar() {
               </button>
               <button
                 type="button"
-                onClick={() => goTo("contact")}
+                onClick={() => {
+                  setMenuOpen(false)
+                  openBooking()
+                }}
                 className="btn-primary w-full text-[13px] py-2.5 justify-center cursor-pointer"
               >
                 Book a Call

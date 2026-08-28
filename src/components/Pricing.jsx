@@ -1,5 +1,6 @@
 import { ArrowRight, Check, Crown, Layers3, Rocket, ShieldCheck, Sparkles } from "lucide-react"
 import { AnimatedSection } from "./ui"
+import { useModals } from "../context/useModals"
 
 const plans = [
   {
@@ -71,6 +72,14 @@ const capabilityComparison = [
 ]
 
 export default function Pricing() {
+  const { openBooking } = useModals()
+
+  const handlePlanSelect = (plan) => {
+    openBooking({
+      notes: `Deployment Inquiry for Tier: ${plan.name} (${plan.price}${plan.period})`,
+    })
+  }
+
   return (
     <section id="pricing" className="relative overflow-hidden bg-[#050505] py-24 sm:py-32 px-4 sm:px-6 lg:px-8 border-t border-white/5">
       {/* Background ambient lighting */}
@@ -137,8 +146,9 @@ export default function Pricing() {
                     <span className="text-xs text-slate-400 font-mono">{plan.period}</span>
                   </div>
 
-                  <a
-                    href="#assessment"
+                  <button
+                    type="button"
+                    onClick={() => handlePlanSelect(plan)}
                     className={`mt-6 flex w-full items-center justify-center gap-2 rounded-xl py-3.5 px-6 text-xs font-bold transition-all cursor-pointer ${
                       isFeatured
                         ? "btn-primary shadow-[0_0_0_1px_rgba(255,255,255,0.08)]"
@@ -147,7 +157,7 @@ export default function Pricing() {
                   >
                     <span>{plan.cta}</span>
                     <ArrowRight size={14} />
-                  </a>
+                  </button>
 
                   {/* Included features */}
                   <div className="mt-8 space-y-3">

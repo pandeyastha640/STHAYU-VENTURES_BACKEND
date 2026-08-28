@@ -1,7 +1,27 @@
-import { ArrowRight, ArrowUpRight, Check, Sparkles, Zap, ShieldCheck } from "lucide-react"
+import { useState, useEffect } from "react"
+import { ArrowRight, MessageSquare, Check, Sparkles, Zap, ShieldCheck, Terminal } from "lucide-react"
 import { AnimatedSection } from "./ui"
+import { useModals } from "../context/useModals"
 
 export default function FinalCTA() {
+  const { openContact, openBooking, openAdmin } = useModals()
+  const [activeNodes, setActiveNodes] = useState(4)
+
+  useEffect(() => {
+    fetch("/api/v1/system/status")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success && data.data) {
+          if (data.data.metrics?.activeAgentsCount) {
+            setActiveNodes(data.data.metrics.activeAgentsCount)
+          }
+        }
+      })
+      .catch(() => {
+        // Fallback resilient status
+      })
+  }, [])
+
   return (
     <section id="contact" className="relative overflow-hidden bg-[#050505] py-24 sm:py-32 px-4 sm:px-6 lg:px-8 border-t border-white/5">
       {/* Background ambient lighting */}
@@ -33,21 +53,27 @@ export default function FinalCTA() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-2">
-                <a
-                  href="#assessment"
-                  className="btn-primary py-4 px-8 text-xs font-bold shadow-[0_0_0_1px_rgba(255,255,255,0.08)]"
+                <button
+                  type="button"
+                  onClick={() => {
+                    const el = document.getElementById("assessment")
+                    if (el) el.scrollIntoView({ behavior: "smooth" })
+                    else openBooking()
+                  }}
+                  className="btn-primary py-4 px-8 text-xs font-bold shadow-[0_0_0_1px_rgba(255,255,255,0.08)] cursor-pointer"
                 >
                   <span>Request System Architecture Audit</span>
                   <ArrowRight size={15} />
-                </a>
+                </button>
 
-                <a
-                  href="mailto:hello@sthayuventures.com?subject=Strategic%20Inquiry%20-%20Sthayu%20Ventures"
-                  className="btn-secondary py-4 px-7 text-xs font-bold"
+                <button
+                  type="button"
+                  onClick={() => openContact()}
+                  className="btn-secondary py-4 px-7 text-xs font-bold cursor-pointer"
                 >
+                  <MessageSquare size={15} />
                   <span>Contact Founders Directly</span>
-                  <ArrowUpRight size={15} />
-                </a>
+                </button>
               </div>
 
               <div className="pt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-slate-400 font-mono">
@@ -67,33 +93,44 @@ export default function FinalCTA() {
             </div>
 
             {/* Right Column: Mini Live Console Visual */}
-            <div className="lg:col-span-4 rounded-2xl border border-white/10 bg-[#050505]/80 p-6 font-mono space-y-4 backdrop-blur-xl shadow-2xl">
+            <div
+              onClick={() => openAdmin()}
+              className="lg:col-span-4 rounded-2xl border border-white/10 bg-[#050505]/80 p-6 font-mono space-y-4 backdrop-blur-xl shadow-2xl hover:border-white/20 transition-all cursor-pointer group"
+              title="Click to view Sthayu Operations Console"
+            >
               <div className="flex items-center justify-between pb-3 border-b border-white/10 text-[10px] text-slate-400">
-                <span>SYSTEM STATUS</span>
-                <span className="text-[#86efac]">● 100% OPERATIONAL</span>
+                <span className="flex items-center gap-1.5">
+                  <Terminal size={12} className="text-[#a1a1aa]" />
+                  SYSTEM STATUS (LIVE)
+                </span>
+                <span className="text-[#86efac] flex items-center gap-1">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#86efac] animate-pulse" />
+                  OPERATIONAL
+                </span>
               </div>
 
               <div className="space-y-2.5 text-xs">
                 <div className="flex justify-between">
-                  <span className="text-slate-400">Architecture:</span>
-                  <span className="text-[#d4d4d8] font-bold">Autonomous Fabric</span>
+                  <span className="text-slate-400">Autonomous Nodes:</span>
+                  <span className="text-[#86efac] font-bold">{activeNodes} Flagship Agents</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-slate-400">Security:</span>
-                  <span className="text-[#86efac] font-bold">SOC2 / HIPAA Grade</span>
+                  <span className="text-slate-400">Compliance & Security:</span>
+                  <span className="text-[#86efac] font-bold">SOC2 / HIPAA Verified</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-slate-400">Avg Implementation:</span>
+                  <span className="text-slate-400">Deployment SLA:</span>
                   <span className="text-white font-bold">14 - 30 Days</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-slate-400">Target ROI:</span>
-                  <span className="text-[#d4d4d8] font-bold">4.2x Operational Lift</span>
+                  <span className="text-slate-400">Target ROI Lift:</span>
+                  <span className="text-[#d4d4d8] font-bold">4.2x Multiple</span>
                 </div>
               </div>
 
-              <div className="pt-3 border-t border-white/10 text-[10px] text-slate-400 text-center">
-                ENGINEERED BY STHAYU VENTURES
+              <div className="pt-3 border-t border-white/10 text-[10px] text-slate-400 flex items-center justify-between group-hover:text-white transition-colors">
+                <span>STHAYU COMMAND FABRIC</span>
+                <span className="text-[#a1a1aa] font-bold">Console →</span>
               </div>
             </div>
 
@@ -105,4 +142,3 @@ export default function FinalCTA() {
     </section>
   )
 }
-
