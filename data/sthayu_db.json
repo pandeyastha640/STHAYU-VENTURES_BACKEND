@@ -12,6 +12,43 @@
   ],
   "leads": [
     {
+      "id": "lead_1787956995714_vble7",
+      "name": "Karan Johar",
+      "email": "karan@dharmaenterprise.com",
+      "company": "Dharma Enterprise",
+      "source": "contact",
+      "status": "new",
+      "score": 70,
+      "notes": "Enquiry Subject: Enterprise LLM On-Premise Audit | Type: enterprise_quote",
+      "createdAt": "2026-08-28T22:43:15.714Z",
+      "updatedAt": "2026-08-28T22:43:51.905Z"
+    },
+    {
+      "id": "lead_1787956995700_n4q8x",
+      "name": "Rahul Verma",
+      "email": "rahul@vermatech.io",
+      "company": "Verma Technologies",
+      "source": "booking",
+      "status": "qualified",
+      "score": 85,
+      "notes": "Strategy Call booked for: 2026-09-15 (14:00 - 14:30 IST)",
+      "createdAt": "2026-08-28T22:43:15.700Z",
+      "updatedAt": "2026-08-28T22:43:51.899Z"
+    },
+    {
+      "id": "lead_1787956995687_25781",
+      "name": "Devika Sen",
+      "email": "devika@growthscale.co",
+      "company": "GrowthScale Inc",
+      "teamSize": "10-50 Employees",
+      "source": "assessment",
+      "status": "qualified",
+      "score": 88,
+      "notes": "Diagnostic: Lead Qualification & Sales Follow-Up | Stack: HubSpot, Slack, Zapier",
+      "createdAt": "2026-08-28T22:43:15.687Z",
+      "updatedAt": "2026-08-28T22:43:51.889Z"
+    },
+    {
       "id": "lead_1787846394571_de165",
       "name": "Priya Desai",
       "email": "priya@growthventures.com",
@@ -34,7 +71,7 @@
       "score": 85,
       "notes": "Strategy Call booked for: 2026-09-02 (14:00 IST)",
       "createdAt": "2026-08-27T15:59:01.793Z",
-      "updatedAt": "2026-08-28T22:23:55.614Z"
+      "updatedAt": "2026-08-28T22:44:04.551Z"
     },
     {
       "id": "lead_1787846341791_tdsvu",
@@ -46,7 +83,7 @@
       "score": 70,
       "notes": "Enquiry Subject: Autonomous Support Integration RFP | Type: enterprise_quote",
       "createdAt": "2026-08-27T15:59:01.791Z",
-      "updatedAt": "2026-08-28T22:23:55.613Z"
+      "updatedAt": "2026-08-28T22:44:04.550Z"
     },
     {
       "id": "lead_1787846341790_76usv",
@@ -59,10 +96,148 @@
       "score": 88,
       "notes": "Diagnostic: Lead Qualification & Sales Follow-Up | Stack: HubSpot, Slack, PostgreSQL",
       "createdAt": "2026-08-27T15:59:01.789Z",
-      "updatedAt": "2026-08-28T22:23:55.611Z"
+      "updatedAt": "2026-08-28T22:44:04.548Z"
     }
   ],
   "assessments": [
+    {
+      "id": "asm_1787957044549_azvgc",
+      "leadId": "lead_1787846341790_76usv",
+      "name": "Aarav Sharma",
+      "email": "aarav@enterprise-scale.io",
+      "company": "Scale Systems Ltd",
+      "teamSize": "50-250 Employees",
+      "primaryFriction": "Lead Qualification & Sales Follow-Up",
+      "currentStack": "HubSpot, Slack, PostgreSQL",
+      "bottleneckScore": 88,
+      "targetRoiMultiplier": "4.5x",
+      "blueprintSummary": {
+        "frictionAnalysis": "High manual drag identified in \"Lead Qualification & Sales Follow-Up\". Existing multi-step human handoffs can be replaced with autonomous event orchestration.",
+        "recommendedAgents": [
+          "STH-SDR-01",
+          "STH-VOX-04"
+        ],
+        "recommendedWorkflows": [
+          "WF-LEAD-QUAL-01",
+          "WF-DATA-SYNC-02"
+        ],
+        "estimatedHoursSavedPerWeek": 35,
+        "targetImplementationDays": 14
+      },
+      "status": "blueprint_dispatched",
+      "createdAt": "2026-08-28T22:44:04.549Z"
+    },
+    {
+      "id": "asm_1787957035793_koep9",
+      "leadId": "lead_1787846341790_76usv",
+      "name": "Aarav Sharma",
+      "email": "aarav@enterprise-scale.io",
+      "company": "Scale Systems Ltd",
+      "teamSize": "50-250 Employees",
+      "primaryFriction": "Lead Qualification & Sales Follow-Up",
+      "currentStack": "HubSpot, Slack, PostgreSQL",
+      "bottleneckScore": 88,
+      "targetRoiMultiplier": "4.5x",
+      "blueprintSummary": {
+        "frictionAnalysis": "High manual drag identified in \"Lead Qualification & Sales Follow-Up\". Existing multi-step human handoffs can be replaced with autonomous event orchestration.",
+        "recommendedAgents": [
+          "STH-SDR-01",
+          "STH-VOX-04"
+        ],
+        "recommendedWorkflows": [
+          "WF-LEAD-QUAL-01",
+          "WF-DATA-SYNC-02"
+        ],
+        "estimatedHoursSavedPerWeek": 35,
+        "targetImplementationDays": 14
+      },
+      "status": "blueprint_dispatched",
+      "createdAt": "2026-08-28T22:43:55.793Z"
+    },
+    {
+      "id": "asm_1787957031889_ew7r9",
+      "leadId": "lead_1787956995687_25781",
+      "name": "Devika Sen",
+      "email": "devika@growthscale.co",
+      "company": "GrowthScale Inc",
+      "teamSize": "10-50 Employees",
+      "primaryFriction": "Lead Qualification & Sales Follow-Up",
+      "currentStack": "HubSpot, Slack, Zapier",
+      "bottleneckScore": 88,
+      "targetRoiMultiplier": "4.5x",
+      "blueprintSummary": {
+        "frictionAnalysis": "High manual drag identified in \"Lead Qualification & Sales Follow-Up\". Existing multi-step human handoffs can be replaced with autonomous event orchestration.",
+        "recommendedAgents": [
+          "STH-SDR-01",
+          "STH-VOX-04"
+        ],
+        "recommendedWorkflows": [
+          "WF-LEAD-QUAL-01",
+          "WF-DATA-SYNC-02"
+        ],
+        "estimatedHoursSavedPerWeek": 35,
+        "targetImplementationDays": 14
+      },
+      "status": "blueprint_dispatched",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-08-28T22:43:51.889Z"
+    },
+    {
+      "id": "asm_1787957026095_v82r5",
+      "leadId": "lead_1787956995687_25781",
+      "name": "Devika Sen",
+      "email": "devika@growthscale.co",
+      "company": "GrowthScale Inc",
+      "teamSize": "10-50 Employees",
+      "primaryFriction": "Lead Qualification & Sales Follow-Up",
+      "currentStack": "HubSpot, Slack, Zapier",
+      "bottleneckScore": 88,
+      "targetRoiMultiplier": "4.5x",
+      "blueprintSummary": {
+        "frictionAnalysis": "High manual drag identified in \"Lead Qualification & Sales Follow-Up\". Existing multi-step human handoffs can be replaced with autonomous event orchestration.",
+        "recommendedAgents": [
+          "STH-SDR-01",
+          "STH-VOX-04"
+        ],
+        "recommendedWorkflows": [
+          "WF-LEAD-QUAL-01",
+          "WF-DATA-SYNC-02"
+        ],
+        "estimatedHoursSavedPerWeek": 35,
+        "targetImplementationDays": 14
+      },
+      "status": "blueprint_dispatched",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-08-28T22:43:46.095Z"
+    },
+    {
+      "id": "asm_1787956995688_yd4ek",
+      "leadId": "lead_1787956995687_25781",
+      "name": "Devika Sen",
+      "email": "devika@growthscale.co",
+      "company": "GrowthScale Inc",
+      "teamSize": "10-50 Employees",
+      "primaryFriction": "Lead Qualification & Sales Follow-Up",
+      "currentStack": "HubSpot, Slack, Zapier",
+      "bottleneckScore": 88,
+      "targetRoiMultiplier": "4.5x",
+      "blueprintSummary": {
+        "frictionAnalysis": "High manual drag identified in \"Lead Qualification & Sales Follow-Up\". Existing multi-step human handoffs can be replaced with autonomous event orchestration.",
+        "recommendedAgents": [
+          "STH-SDR-01",
+          "STH-VOX-04"
+        ],
+        "recommendedWorkflows": [
+          "WF-LEAD-QUAL-01",
+          "WF-DATA-SYNC-02"
+        ],
+        "estimatedHoursSavedPerWeek": 35,
+        "targetImplementationDays": 14
+      },
+      "status": "blueprint_dispatched",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-08-28T22:43:15.688Z"
+    },
     {
       "id": "asm_1787955835612_6liu4",
       "leadId": "lead_1787846341790_76usv",
@@ -174,6 +349,69 @@
   ],
   "contacts": [
     {
+      "id": "cnt_1787957044550_x50eo",
+      "leadId": "lead_1787846341791_tdsvu",
+      "name": "Meera Patel",
+      "email": "meera@techcorp.in",
+      "company": "TechCorp Global",
+      "subject": "Autonomous Support Integration RFP",
+      "message": "We need Tier-1 deflection integrated with our Zendesk instance.",
+      "enquiryType": "enterprise_quote",
+      "status": "unread",
+      "createdAt": "2026-08-28T22:44:04.550Z"
+    },
+    {
+      "id": "cnt_1787957035796_qrc9p",
+      "leadId": "lead_1787846341791_tdsvu",
+      "name": "Meera Patel",
+      "email": "meera@techcorp.in",
+      "company": "TechCorp Global",
+      "subject": "Autonomous Support Integration RFP",
+      "message": "We need Tier-1 deflection integrated with our Zendesk instance.",
+      "enquiryType": "enterprise_quote",
+      "status": "unread",
+      "createdAt": "2026-08-28T22:43:55.796Z"
+    },
+    {
+      "id": "cnt_1787957031905_agpqi",
+      "leadId": "lead_1787956995714_vble7",
+      "name": "Karan Johar",
+      "email": "karan@dharmaenterprise.com",
+      "company": "Dharma Enterprise",
+      "subject": "Enterprise LLM On-Premise Audit",
+      "message": "We need private cluster VPC deployment for sensitive document analysis.",
+      "enquiryType": "enterprise_quote",
+      "status": "unread",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-08-28T22:43:51.905Z"
+    },
+    {
+      "id": "cnt_1787957026106_kh37x",
+      "leadId": "lead_1787956995714_vble7",
+      "name": "Karan Johar",
+      "email": "karan@dharmaenterprise.com",
+      "company": "Dharma Enterprise",
+      "subject": "Enterprise LLM On-Premise Audit",
+      "message": "We need private cluster VPC deployment for sensitive document analysis.",
+      "enquiryType": "enterprise_quote",
+      "status": "unread",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-08-28T22:43:46.106Z"
+    },
+    {
+      "id": "cnt_1787956995714_goao1",
+      "leadId": "lead_1787956995714_vble7",
+      "name": "Karan Johar",
+      "email": "karan@dharmaenterprise.com",
+      "company": "Dharma Enterprise",
+      "subject": "Enterprise LLM On-Premise Audit",
+      "message": "We need private cluster VPC deployment for sensitive document analysis.",
+      "enquiryType": "enterprise_quote",
+      "status": "unread",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-08-28T22:43:15.714Z"
+    },
+    {
       "id": "cnt_1787955835613_k1c86",
       "leadId": "lead_1787846341791_tdsvu",
       "name": "Meera Patel",
@@ -211,6 +449,66 @@
     }
   ],
   "bookings": [
+    {
+      "id": "bkg_1787957044551_8s5dq",
+      "leadId": "lead_1787846341793_z2c9s",
+      "name": "Vikram Mehta",
+      "email": "vikram@fintech.co",
+      "company": "FinTech Ops",
+      "requestedDate": "2026-09-02",
+      "timeSlot": "14:00 IST",
+      "notes": "Review data reconciliation pipeline",
+      "status": "pending",
+      "createdAt": "2026-08-28T22:44:04.551Z"
+    },
+    {
+      "id": "bkg_1787957035797_ze5zp",
+      "leadId": "lead_1787846341793_z2c9s",
+      "name": "Vikram Mehta",
+      "email": "vikram@fintech.co",
+      "company": "FinTech Ops",
+      "requestedDate": "2026-09-02",
+      "timeSlot": "14:00 IST",
+      "notes": "Review data reconciliation pipeline",
+      "status": "pending",
+      "createdAt": "2026-08-28T22:43:55.797Z"
+    },
+    {
+      "id": "bkg_1787957031899_s69ir",
+      "leadId": "lead_1787956995700_n4q8x",
+      "name": "Rahul Verma",
+      "email": "rahul@vermatech.io",
+      "company": "Verma Technologies",
+      "requestedDate": "2026-09-15",
+      "timeSlot": "14:00 - 14:30 IST",
+      "notes": "Discuss autonomous SDR deployment",
+      "status": "pending",
+      "createdAt": "2026-08-28T22:43:51.899Z"
+    },
+    {
+      "id": "bkg_1787957026101_nwq5n",
+      "leadId": "lead_1787956995700_n4q8x",
+      "name": "Rahul Verma",
+      "email": "rahul@vermatech.io",
+      "company": "Verma Technologies",
+      "requestedDate": "2026-09-15",
+      "timeSlot": "14:00 - 14:30 IST",
+      "notes": "Discuss autonomous SDR deployment",
+      "status": "pending",
+      "createdAt": "2026-08-28T22:43:46.101Z"
+    },
+    {
+      "id": "bkg_1787956995700_fu0j0",
+      "leadId": "lead_1787956995700_n4q8x",
+      "name": "Rahul Verma",
+      "email": "rahul@vermatech.io",
+      "company": "Verma Technologies",
+      "requestedDate": "2026-09-15",
+      "timeSlot": "14:00 - 14:30 IST",
+      "notes": "Discuss autonomous SDR deployment",
+      "status": "pending",
+      "createdAt": "2026-08-28T22:43:15.700Z"
+    },
     {
       "id": "bkg_1787955835614_gs370",
       "leadId": "lead_1787846341793_z2c9s",
@@ -263,7 +561,7 @@
         "Automated Booking",
         "CRM Sync"
       ],
-      "executionCount": 1423,
+      "executionCount": 1428,
       "successRate": 99.4,
       "avgLatencyMs": 420,
       "createdAt": "2026-08-27T15:57:40.569Z"
@@ -282,7 +580,7 @@
         "Deflection Routing",
         "Human Escalation"
       ],
-      "executionCount": 3840,
+      "executionCount": 3843,
       "successRate": 98.9,
       "avgLatencyMs": 310,
       "createdAt": "2026-08-27T15:57:40.569Z"
@@ -301,7 +599,7 @@
         "Webhook Dispatch",
         "Ledger Sync"
       ],
-      "executionCount": 9203,
+      "executionCount": 9208,
       "successRate": 99.9,
       "avgLatencyMs": 180,
       "createdAt": "2026-08-27T15:57:40.569Z"
@@ -320,13 +618,382 @@
         "Real-Time Telephony",
         "CRM Call Logging"
       ],
-      "executionCount": 650,
+      "executionCount": 653,
       "successRate": 97.8,
       "avgLatencyMs": 195,
       "createdAt": "2026-08-27T15:57:40.569Z"
     }
   ],
   "agentExecutions": [
+    {
+      "id": "exec_1787957044553_yoapi",
+      "agentId": "agent_ops_03",
+      "agentCode": "STH-OPS-03",
+      "triggerSource": "api_direct",
+      "inputPayload": {
+        "tableA": "orders",
+        "tableB": "invoices"
+      },
+      "outputPayload": {
+        "reconciledRecords": 142,
+        "discrepanciesFound": 0,
+        "verifiedChecksum": "0x8f2a1b9e",
+        "syncedSystems": [
+          "PostgreSQL",
+          "HubSpot",
+          "Stripe"
+        ]
+      },
+      "status": "success",
+      "latencyMs": 160,
+      "tokensUsed": 463,
+      "createdAt": "2026-08-28T22:44:04.553Z"
+    },
+    {
+      "id": "exec_1787957044552_23gwr",
+      "agentId": "agent_sdr_01",
+      "agentCode": "STH-SDR-01",
+      "triggerSource": "test_suite",
+      "inputPayload": {
+        "leadEmail": "newlead@growth.com",
+        "intentScore": 0.94
+      },
+      "outputPayload": {
+        "intent": "HIGH_QUALIFIED_INBOUND",
+        "confidenceScore": 0.96,
+        "actionTaken": "CALENDAR_ROUTED_AND_CRM_ENRICHED",
+        "extractedFields": {
+          "leadScore": 92,
+          "recommendedTier": "Growth Engine",
+          "nextStep": "Discovery Blueprint Call"
+        }
+      },
+      "status": "success",
+      "latencyMs": 437,
+      "tokensUsed": 280,
+      "createdAt": "2026-08-28T22:44:04.552Z"
+    },
+    {
+      "id": "exec_1787957035801_ox2u3",
+      "agentId": "agent_ops_03",
+      "agentCode": "STH-OPS-03",
+      "triggerSource": "api_direct",
+      "inputPayload": {
+        "tableA": "orders",
+        "tableB": "invoices"
+      },
+      "outputPayload": {
+        "reconciledRecords": 142,
+        "discrepanciesFound": 0,
+        "verifiedChecksum": "0x8f2a1b9e",
+        "syncedSystems": [
+          "PostgreSQL",
+          "HubSpot",
+          "Stripe"
+        ]
+      },
+      "status": "success",
+      "latencyMs": 166,
+      "tokensUsed": 334,
+      "createdAt": "2026-08-28T22:43:55.801Z"
+    },
+    {
+      "id": "exec_1787957035800_uky40",
+      "agentId": "agent_sdr_01",
+      "agentCode": "STH-SDR-01",
+      "triggerSource": "test_suite",
+      "inputPayload": {
+        "leadEmail": "newlead@growth.com",
+        "intentScore": 0.94
+      },
+      "outputPayload": {
+        "intent": "HIGH_QUALIFIED_INBOUND",
+        "confidenceScore": 0.96,
+        "actionTaken": "CALENDAR_ROUTED_AND_CRM_ENRICHED",
+        "extractedFields": {
+          "leadScore": 92,
+          "recommendedTier": "Growth Engine",
+          "nextStep": "Discovery Blueprint Call"
+        }
+      },
+      "status": "success",
+      "latencyMs": 386,
+      "tokensUsed": 302,
+      "createdAt": "2026-08-28T22:43:55.800Z"
+    },
+    {
+      "id": "exec_1787957031919_1n72s",
+      "agentId": "agent_vox_04",
+      "agentCode": "STH-VOX-04",
+      "triggerSource": "api_direct",
+      "inputPayload": {
+        "query": "E2E Test Execution",
+        "targetMode": "sandbox"
+      },
+      "outputPayload": {
+        "callStatus": "COMPLETED",
+        "latencyP95Ms": 188,
+        "transcriptionConfidence": 0.97,
+        "appointmentConfirmed": true
+      },
+      "status": "success",
+      "latencyMs": 205,
+      "tokensUsed": 277,
+      "createdAt": "2026-08-28T22:43:51.919Z"
+    },
+    {
+      "id": "exec_1787957031915_zzox9",
+      "agentId": "agent_ops_03",
+      "agentCode": "STH-OPS-03",
+      "triggerSource": "api_direct",
+      "inputPayload": {
+        "query": "E2E Test Execution",
+        "targetMode": "sandbox"
+      },
+      "outputPayload": {
+        "reconciledRecords": 142,
+        "discrepanciesFound": 0,
+        "verifiedChecksum": "0x8f2a1b9e",
+        "syncedSystems": [
+          "PostgreSQL",
+          "HubSpot",
+          "Stripe"
+        ]
+      },
+      "status": "success",
+      "latencyMs": 178,
+      "tokensUsed": 226,
+      "createdAt": "2026-08-28T22:43:51.915Z"
+    },
+    {
+      "id": "exec_1787957031912_mobuz",
+      "agentId": "agent_sup_02",
+      "agentCode": "STH-SUP-02",
+      "triggerSource": "api_direct",
+      "inputPayload": {
+        "query": "E2E Test Execution",
+        "targetMode": "sandbox"
+      },
+      "outputPayload": {
+        "resolved": true,
+        "deflected": true,
+        "confidenceScore": 0.98,
+        "responseCategory": "ARCHITECTURE_FAQ",
+        "citationSources": [
+          "Sthayu_Vector_RAG_v2.0"
+        ]
+      },
+      "status": "success",
+      "latencyMs": 309,
+      "tokensUsed": 261,
+      "createdAt": "2026-08-28T22:43:51.912Z"
+    },
+    {
+      "id": "exec_1787957031909_k4x8v",
+      "agentId": "agent_sdr_01",
+      "agentCode": "STH-SDR-01",
+      "triggerSource": "api_direct",
+      "inputPayload": {
+        "query": "E2E Test Execution",
+        "targetMode": "sandbox"
+      },
+      "outputPayload": {
+        "intent": "HIGH_QUALIFIED_INBOUND",
+        "confidenceScore": 0.96,
+        "actionTaken": "CALENDAR_ROUTED_AND_CRM_ENRICHED",
+        "extractedFields": {
+          "leadScore": 92,
+          "recommendedTier": "Growth Engine",
+          "nextStep": "Discovery Blueprint Call"
+        }
+      },
+      "status": "success",
+      "latencyMs": 484,
+      "tokensUsed": 320,
+      "createdAt": "2026-08-28T22:43:51.909Z"
+    },
+    {
+      "id": "exec_1787957026115_p85s5",
+      "agentId": "agent_vox_04",
+      "agentCode": "STH-VOX-04",
+      "triggerSource": "api_direct",
+      "inputPayload": {
+        "query": "E2E Test Execution",
+        "targetMode": "sandbox"
+      },
+      "outputPayload": {
+        "callStatus": "COMPLETED",
+        "latencyP95Ms": 188,
+        "transcriptionConfidence": 0.97,
+        "appointmentConfirmed": true
+      },
+      "status": "success",
+      "latencyMs": 288,
+      "tokensUsed": 202,
+      "createdAt": "2026-08-28T22:43:46.115Z"
+    },
+    {
+      "id": "exec_1787957026113_9ezr0",
+      "agentId": "agent_ops_03",
+      "agentCode": "STH-OPS-03",
+      "triggerSource": "api_direct",
+      "inputPayload": {
+        "query": "E2E Test Execution",
+        "targetMode": "sandbox"
+      },
+      "outputPayload": {
+        "reconciledRecords": 142,
+        "discrepanciesFound": 0,
+        "verifiedChecksum": "0x8f2a1b9e",
+        "syncedSystems": [
+          "PostgreSQL",
+          "HubSpot",
+          "Stripe"
+        ]
+      },
+      "status": "success",
+      "latencyMs": 180,
+      "tokensUsed": 349,
+      "createdAt": "2026-08-28T22:43:46.113Z"
+    },
+    {
+      "id": "exec_1787957026111_qlfkh",
+      "agentId": "agent_sup_02",
+      "agentCode": "STH-SUP-02",
+      "triggerSource": "api_direct",
+      "inputPayload": {
+        "query": "E2E Test Execution",
+        "targetMode": "sandbox"
+      },
+      "outputPayload": {
+        "resolved": true,
+        "deflected": true,
+        "confidenceScore": 0.98,
+        "responseCategory": "ARCHITECTURE_FAQ",
+        "citationSources": [
+          "Sthayu_Vector_RAG_v2.0"
+        ]
+      },
+      "status": "success",
+      "latencyMs": 282,
+      "tokensUsed": 260,
+      "createdAt": "2026-08-28T22:43:46.111Z"
+    },
+    {
+      "id": "exec_1787957026108_hzx6p",
+      "agentId": "agent_sdr_01",
+      "agentCode": "STH-SDR-01",
+      "triggerSource": "api_direct",
+      "inputPayload": {
+        "query": "E2E Test Execution",
+        "targetMode": "sandbox"
+      },
+      "outputPayload": {
+        "intent": "HIGH_QUALIFIED_INBOUND",
+        "confidenceScore": 0.96,
+        "actionTaken": "CALENDAR_ROUTED_AND_CRM_ENRICHED",
+        "extractedFields": {
+          "leadScore": 92,
+          "recommendedTier": "Growth Engine",
+          "nextStep": "Discovery Blueprint Call"
+        }
+      },
+      "status": "success",
+      "latencyMs": 504,
+      "tokensUsed": 336,
+      "createdAt": "2026-08-28T22:43:46.108Z"
+    },
+    {
+      "id": "exec_1787956995803_is1yi",
+      "agentId": "agent_vox_04",
+      "agentCode": "STH-VOX-04",
+      "triggerSource": "api_direct",
+      "inputPayload": {
+        "query": "E2E Test Execution",
+        "targetMode": "sandbox"
+      },
+      "outputPayload": {
+        "callStatus": "COMPLETED",
+        "latencyP95Ms": 188,
+        "transcriptionConfidence": 0.97,
+        "appointmentConfirmed": true
+      },
+      "status": "success",
+      "latencyMs": 251,
+      "tokensUsed": 399,
+      "createdAt": "2026-08-28T22:43:15.803Z"
+    },
+    {
+      "id": "exec_1787956995788_t5pzr",
+      "agentId": "agent_ops_03",
+      "agentCode": "STH-OPS-03",
+      "triggerSource": "api_direct",
+      "inputPayload": {
+        "query": "E2E Test Execution",
+        "targetMode": "sandbox"
+      },
+      "outputPayload": {
+        "reconciledRecords": 142,
+        "discrepanciesFound": 0,
+        "verifiedChecksum": "0x8f2a1b9e",
+        "syncedSystems": [
+          "PostgreSQL",
+          "HubSpot",
+          "Stripe"
+        ]
+      },
+      "status": "success",
+      "latencyMs": 249,
+      "tokensUsed": 404,
+      "createdAt": "2026-08-28T22:43:15.788Z"
+    },
+    {
+      "id": "exec_1787956995744_nm84r",
+      "agentId": "agent_sup_02",
+      "agentCode": "STH-SUP-02",
+      "triggerSource": "api_direct",
+      "inputPayload": {
+        "query": "E2E Test Execution",
+        "targetMode": "sandbox"
+      },
+      "outputPayload": {
+        "resolved": true,
+        "deflected": true,
+        "confidenceScore": 0.98,
+        "responseCategory": "ARCHITECTURE_FAQ",
+        "citationSources": [
+          "Sthayu_Vector_RAG_v2.0"
+        ]
+      },
+      "status": "success",
+      "latencyMs": 266,
+      "tokensUsed": 316,
+      "createdAt": "2026-08-28T22:43:15.744Z"
+    },
+    {
+      "id": "exec_1787956995726_vq056",
+      "agentId": "agent_sdr_01",
+      "agentCode": "STH-SDR-01",
+      "triggerSource": "api_direct",
+      "inputPayload": {
+        "query": "E2E Test Execution",
+        "targetMode": "sandbox"
+      },
+      "outputPayload": {
+        "intent": "HIGH_QUALIFIED_INBOUND",
+        "confidenceScore": 0.96,
+        "actionTaken": "CALENDAR_ROUTED_AND_CRM_ENRICHED",
+        "extractedFields": {
+          "leadScore": 92,
+          "recommendedTier": "Growth Engine",
+          "nextStep": "Discovery Blueprint Call"
+        }
+      },
+      "status": "success",
+      "latencyMs": 483,
+      "tokensUsed": 271,
+      "createdAt": "2026-08-28T22:43:15.726Z"
+    },
     {
       "id": "exec_1787955835615_4wwiw",
       "agentId": "agent_ops_03",
@@ -480,8 +1147,8 @@
       "triggerType": "webhook",
       "webhookPath": "/api/v1/workflows/webhooks/lead-ingest",
       "active": true,
-      "executionCount": 343,
-      "lastRunAt": "2026-08-28T22:23:55.615Z",
+      "executionCount": 345,
+      "lastRunAt": "2026-08-28T22:44:04.554Z",
       "description": "Validates incoming diagnostic submissions, computes bottleneck scores, and sends architectural blueprint.",
       "createdAt": "2026-08-27T15:57:40.569Z"
     },
@@ -509,6 +1176,74 @@
     }
   ],
   "workflowExecutions": [
+    {
+      "id": "wfx_1787957044554_oe58x",
+      "workflowId": "wf_lead_ingest_01",
+      "workflowCode": "WF-LEAD-QUAL-01",
+      "status": "completed",
+      "triggerPayload": {
+        "test": true,
+        "source": "unit_test"
+      },
+      "stepResults": [
+        {
+          "stepName": "Payload Validation & Schema Check",
+          "status": "passed",
+          "durationMs": 14
+        },
+        {
+          "stepName": "CRM Event & Database Idempotency Check",
+          "status": "passed",
+          "durationMs": 28
+        },
+        {
+          "stepName": "Agent Guardrail & Dispatch",
+          "status": "passed",
+          "durationMs": 65
+        },
+        {
+          "stepName": "Webhook Response Acknowledgment",
+          "status": "passed",
+          "durationMs": 12
+        }
+      ],
+      "latencyMs": 119,
+      "createdAt": "2026-08-28T22:44:04.554Z"
+    },
+    {
+      "id": "wfx_1787957035802_sf6h9",
+      "workflowId": "wf_lead_ingest_01",
+      "workflowCode": "WF-LEAD-QUAL-01",
+      "status": "completed",
+      "triggerPayload": {
+        "test": true,
+        "source": "unit_test"
+      },
+      "stepResults": [
+        {
+          "stepName": "Payload Validation & Schema Check",
+          "status": "passed",
+          "durationMs": 14
+        },
+        {
+          "stepName": "CRM Event & Database Idempotency Check",
+          "status": "passed",
+          "durationMs": 28
+        },
+        {
+          "stepName": "Agent Guardrail & Dispatch",
+          "status": "passed",
+          "durationMs": 65
+        },
+        {
+          "stepName": "Webhook Response Acknowledgment",
+          "status": "passed",
+          "durationMs": 12
+        }
+      ],
+      "latencyMs": 119,
+      "createdAt": "2026-08-28T22:43:55.802Z"
+    },
     {
       "id": "wfx_1787955835615_t1zk0",
       "workflowId": "wf_lead_ingest_01",
@@ -613,6 +1348,421 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "aud_1787957044554_ppk0o",
+      "action": "WORKFLOW_TRIGGERED",
+      "resource": "workflow:WF-LEAD-QUAL-01",
+      "details": {
+        "executionId": "wfx_1787957044554_oe58x",
+        "stepsExecuted": 4
+      },
+      "createdAt": "2026-08-28T22:44:04.554Z"
+    },
+    {
+      "id": "aud_1787957044553_tjcih",
+      "action": "AGENT_EXECUTION_COMPLETED",
+      "resource": "agent:STH-OPS-03",
+      "details": {
+        "executionId": "exec_1787957044553_yoapi",
+        "status": "success",
+        "tokensUsed": 463,
+        "latencyMs": 160
+      },
+      "createdAt": "2026-08-28T22:44:04.553Z"
+    },
+    {
+      "id": "aud_1787957044553_lopqc",
+      "action": "AGENT_EXECUTION_COMPLETED",
+      "resource": "agent:STH-SDR-01",
+      "details": {
+        "executionId": "exec_1787957044552_23gwr",
+        "status": "success",
+        "tokensUsed": 280,
+        "latencyMs": 437
+      },
+      "createdAt": "2026-08-28T22:44:04.553Z"
+    },
+    {
+      "id": "aud_1787957044552_9lv8w",
+      "action": "BOOKING_CREATED",
+      "resource": "booking:bkg_1787957044551_8s5dq",
+      "details": {
+        "leadId": "lead_1787846341793_z2c9s",
+        "email": "vikram@fintech.co",
+        "date": "2026-09-02"
+      },
+      "createdAt": "2026-08-28T22:44:04.552Z"
+    },
+    {
+      "id": "aud_1787957044550_sp4s2",
+      "action": "CONTACT_ENQUIRY_CREATED",
+      "resource": "contact:cnt_1787957044550_x50eo",
+      "details": {
+        "leadId": "lead_1787846341791_tdsvu",
+        "email": "meera@techcorp.in",
+        "subject": "Autonomous Support Integration RFP"
+      },
+      "createdAt": "2026-08-28T22:44:04.550Z"
+    },
+    {
+      "id": "aud_1787957044549_qs41s",
+      "action": "ASSESSMENT_SUBMITTED",
+      "resource": "assessment:asm_1787957044549_azvgc",
+      "details": {
+        "leadId": "lead_1787846341790_76usv",
+        "email": "aarav@enterprise-scale.io",
+        "primaryFriction": "Lead Qualification & Sales Follow-Up",
+        "score": 88
+      },
+      "createdAt": "2026-08-28T22:44:04.549Z"
+    },
+    {
+      "id": "aud_1787957035802_s4ie9",
+      "action": "WORKFLOW_TRIGGERED",
+      "resource": "workflow:WF-LEAD-QUAL-01",
+      "details": {
+        "executionId": "wfx_1787957035802_sf6h9",
+        "stepsExecuted": 4
+      },
+      "createdAt": "2026-08-28T22:43:55.802Z"
+    },
+    {
+      "id": "aud_1787957035801_9gcpe",
+      "action": "AGENT_EXECUTION_COMPLETED",
+      "resource": "agent:STH-OPS-03",
+      "details": {
+        "executionId": "exec_1787957035801_ox2u3",
+        "status": "success",
+        "tokensUsed": 334,
+        "latencyMs": 166
+      },
+      "createdAt": "2026-08-28T22:43:55.801Z"
+    },
+    {
+      "id": "aud_1787957035800_pkglo",
+      "action": "AGENT_EXECUTION_COMPLETED",
+      "resource": "agent:STH-SDR-01",
+      "details": {
+        "executionId": "exec_1787957035800_uky40",
+        "status": "success",
+        "tokensUsed": 302,
+        "latencyMs": 386
+      },
+      "createdAt": "2026-08-28T22:43:55.800Z"
+    },
+    {
+      "id": "aud_1787957035797_ifkws",
+      "action": "BOOKING_CREATED",
+      "resource": "booking:bkg_1787957035797_ze5zp",
+      "details": {
+        "leadId": "lead_1787846341793_z2c9s",
+        "email": "vikram@fintech.co",
+        "date": "2026-09-02"
+      },
+      "createdAt": "2026-08-28T22:43:55.797Z"
+    },
+    {
+      "id": "aud_1787957035796_efaz4",
+      "action": "CONTACT_ENQUIRY_CREATED",
+      "resource": "contact:cnt_1787957035796_qrc9p",
+      "details": {
+        "leadId": "lead_1787846341791_tdsvu",
+        "email": "meera@techcorp.in",
+        "subject": "Autonomous Support Integration RFP"
+      },
+      "createdAt": "2026-08-28T22:43:55.796Z"
+    },
+    {
+      "id": "aud_1787957035793_yp56t",
+      "action": "ASSESSMENT_SUBMITTED",
+      "resource": "assessment:asm_1787957035793_koep9",
+      "details": {
+        "leadId": "lead_1787846341790_76usv",
+        "email": "aarav@enterprise-scale.io",
+        "primaryFriction": "Lead Qualification & Sales Follow-Up",
+        "score": 88
+      },
+      "createdAt": "2026-08-28T22:43:55.793Z"
+    },
+    {
+      "id": "aud_1787957032039_vsmrd",
+      "userId": "usr_admin_01",
+      "userEmail": "admin@sthayuventures.com",
+      "action": "USER_LOGIN_SUCCESS",
+      "resource": "user:usr_admin_01",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-08-28T22:43:52.039Z"
+    },
+    {
+      "id": "aud_1787957031919_rnxja",
+      "action": "AGENT_EXECUTION_COMPLETED",
+      "resource": "agent:STH-VOX-04",
+      "details": {
+        "executionId": "exec_1787957031919_1n72s",
+        "status": "success",
+        "tokensUsed": 277,
+        "latencyMs": 205
+      },
+      "createdAt": "2026-08-28T22:43:51.919Z"
+    },
+    {
+      "id": "aud_1787957031915_qnggc",
+      "action": "AGENT_EXECUTION_COMPLETED",
+      "resource": "agent:STH-OPS-03",
+      "details": {
+        "executionId": "exec_1787957031915_zzox9",
+        "status": "success",
+        "tokensUsed": 226,
+        "latencyMs": 178
+      },
+      "createdAt": "2026-08-28T22:43:51.915Z"
+    },
+    {
+      "id": "aud_1787957031912_b7bxa",
+      "action": "AGENT_EXECUTION_COMPLETED",
+      "resource": "agent:STH-SUP-02",
+      "details": {
+        "executionId": "exec_1787957031912_mobuz",
+        "status": "success",
+        "tokensUsed": 261,
+        "latencyMs": 309
+      },
+      "createdAt": "2026-08-28T22:43:51.912Z"
+    },
+    {
+      "id": "aud_1787957031909_tu9ix",
+      "action": "AGENT_EXECUTION_COMPLETED",
+      "resource": "agent:STH-SDR-01",
+      "details": {
+        "executionId": "exec_1787957031909_k4x8v",
+        "status": "success",
+        "tokensUsed": 320,
+        "latencyMs": 484
+      },
+      "createdAt": "2026-08-28T22:43:51.909Z"
+    },
+    {
+      "id": "aud_1787957031905_taqnk",
+      "action": "CONTACT_ENQUIRY_CREATED",
+      "resource": "contact:cnt_1787957031905_agpqi",
+      "details": {
+        "leadId": "lead_1787956995714_vble7",
+        "email": "karan@dharmaenterprise.com",
+        "subject": "Enterprise LLM On-Premise Audit"
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-08-28T22:43:51.905Z"
+    },
+    {
+      "id": "aud_1787957031899_qjzie",
+      "action": "BOOKING_CREATED",
+      "resource": "booking:bkg_1787957031899_s69ir",
+      "details": {
+        "leadId": "lead_1787956995700_n4q8x",
+        "email": "rahul@vermatech.io",
+        "date": "2026-09-15"
+      },
+      "createdAt": "2026-08-28T22:43:51.899Z"
+    },
+    {
+      "id": "aud_1787957031889_hng74",
+      "action": "ASSESSMENT_SUBMITTED",
+      "resource": "assessment:asm_1787957031889_ew7r9",
+      "details": {
+        "leadId": "lead_1787956995687_25781",
+        "email": "devika@growthscale.co",
+        "primaryFriction": "Lead Qualification & Sales Follow-Up",
+        "score": 88
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-08-28T22:43:51.889Z"
+    },
+    {
+      "id": "aud_1787957026213_iwfft",
+      "userId": "usr_admin_01",
+      "userEmail": "admin@sthayuventures.com",
+      "action": "USER_LOGIN_SUCCESS",
+      "resource": "user:usr_admin_01",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-08-28T22:43:46.213Z"
+    },
+    {
+      "id": "aud_1787957026116_5cokr",
+      "action": "AGENT_EXECUTION_COMPLETED",
+      "resource": "agent:STH-VOX-04",
+      "details": {
+        "executionId": "exec_1787957026115_p85s5",
+        "status": "success",
+        "tokensUsed": 202,
+        "latencyMs": 288
+      },
+      "createdAt": "2026-08-28T22:43:46.116Z"
+    },
+    {
+      "id": "aud_1787957026114_vrax1",
+      "action": "AGENT_EXECUTION_COMPLETED",
+      "resource": "agent:STH-OPS-03",
+      "details": {
+        "executionId": "exec_1787957026113_9ezr0",
+        "status": "success",
+        "tokensUsed": 349,
+        "latencyMs": 180
+      },
+      "createdAt": "2026-08-28T22:43:46.114Z"
+    },
+    {
+      "id": "aud_1787957026111_38xx4",
+      "action": "AGENT_EXECUTION_COMPLETED",
+      "resource": "agent:STH-SUP-02",
+      "details": {
+        "executionId": "exec_1787957026111_qlfkh",
+        "status": "success",
+        "tokensUsed": 260,
+        "latencyMs": 282
+      },
+      "createdAt": "2026-08-28T22:43:46.111Z"
+    },
+    {
+      "id": "aud_1787957026108_x0kml",
+      "action": "AGENT_EXECUTION_COMPLETED",
+      "resource": "agent:STH-SDR-01",
+      "details": {
+        "executionId": "exec_1787957026108_hzx6p",
+        "status": "success",
+        "tokensUsed": 336,
+        "latencyMs": 504
+      },
+      "createdAt": "2026-08-28T22:43:46.108Z"
+    },
+    {
+      "id": "aud_1787957026106_g7gxt",
+      "action": "CONTACT_ENQUIRY_CREATED",
+      "resource": "contact:cnt_1787957026106_kh37x",
+      "details": {
+        "leadId": "lead_1787956995714_vble7",
+        "email": "karan@dharmaenterprise.com",
+        "subject": "Enterprise LLM On-Premise Audit"
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-08-28T22:43:46.106Z"
+    },
+    {
+      "id": "aud_1787957026101_9qfv0",
+      "action": "BOOKING_CREATED",
+      "resource": "booking:bkg_1787957026101_nwq5n",
+      "details": {
+        "leadId": "lead_1787956995700_n4q8x",
+        "email": "rahul@vermatech.io",
+        "date": "2026-09-15"
+      },
+      "createdAt": "2026-08-28T22:43:46.101Z"
+    },
+    {
+      "id": "aud_1787957026095_25jtx",
+      "action": "ASSESSMENT_SUBMITTED",
+      "resource": "assessment:asm_1787957026095_v82r5",
+      "details": {
+        "leadId": "lead_1787956995687_25781",
+        "email": "devika@growthscale.co",
+        "primaryFriction": "Lead Qualification & Sales Follow-Up",
+        "score": 88
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-08-28T22:43:46.095Z"
+    },
+    {
+      "id": "aud_1787956996129_434po",
+      "userId": "usr_admin_01",
+      "userEmail": "admin@sthayuventures.com",
+      "action": "USER_LOGIN_SUCCESS",
+      "resource": "user:usr_admin_01",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-08-28T22:43:16.129Z"
+    },
+    {
+      "id": "aud_1787956995803_jj1tl",
+      "action": "AGENT_EXECUTION_COMPLETED",
+      "resource": "agent:STH-VOX-04",
+      "details": {
+        "executionId": "exec_1787956995803_is1yi",
+        "status": "success",
+        "tokensUsed": 399,
+        "latencyMs": 251
+      },
+      "createdAt": "2026-08-28T22:43:15.803Z"
+    },
+    {
+      "id": "aud_1787956995788_9gx3r",
+      "action": "AGENT_EXECUTION_COMPLETED",
+      "resource": "agent:STH-OPS-03",
+      "details": {
+        "executionId": "exec_1787956995788_t5pzr",
+        "status": "success",
+        "tokensUsed": 404,
+        "latencyMs": 249
+      },
+      "createdAt": "2026-08-28T22:43:15.788Z"
+    },
+    {
+      "id": "aud_1787956995744_ajzmk",
+      "action": "AGENT_EXECUTION_COMPLETED",
+      "resource": "agent:STH-SUP-02",
+      "details": {
+        "executionId": "exec_1787956995744_nm84r",
+        "status": "success",
+        "tokensUsed": 316,
+        "latencyMs": 266
+      },
+      "createdAt": "2026-08-28T22:43:15.744Z"
+    },
+    {
+      "id": "aud_1787956995727_zf63f",
+      "action": "AGENT_EXECUTION_COMPLETED",
+      "resource": "agent:STH-SDR-01",
+      "details": {
+        "executionId": "exec_1787956995726_vq056",
+        "status": "success",
+        "tokensUsed": 271,
+        "latencyMs": 483
+      },
+      "createdAt": "2026-08-28T22:43:15.727Z"
+    },
+    {
+      "id": "aud_1787956995715_bxst1",
+      "action": "CONTACT_ENQUIRY_CREATED",
+      "resource": "contact:cnt_1787956995714_goao1",
+      "details": {
+        "leadId": "lead_1787956995714_vble7",
+        "email": "karan@dharmaenterprise.com",
+        "subject": "Enterprise LLM On-Premise Audit"
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-08-28T22:43:15.715Z"
+    },
+    {
+      "id": "aud_1787956995700_dw9ed",
+      "action": "BOOKING_CREATED",
+      "resource": "booking:bkg_1787956995700_fu0j0",
+      "details": {
+        "leadId": "lead_1787956995700_n4q8x",
+        "email": "rahul@vermatech.io",
+        "date": "2026-09-15"
+      },
+      "createdAt": "2026-08-28T22:43:15.700Z"
+    },
+    {
+      "id": "aud_1787956995688_6pfyo",
+      "action": "ASSESSMENT_SUBMITTED",
+      "resource": "assessment:asm_1787956995688_yd4ek",
+      "details": {
+        "leadId": "lead_1787956995687_25781",
+        "email": "devika@growthscale.co",
+        "primaryFriction": "Lead Qualification & Sales Follow-Up",
+        "score": 88
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-08-28T22:43:15.688Z"
+    },
     {
       "id": "aud_1787955835616_4kmmw",
       "action": "WORKFLOW_TRIGGERED",
