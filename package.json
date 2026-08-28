@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.0.4",
     "bcryptjs": "^3.0.3",
     "cors": "^2.8.6",
     "esbuild": "^0.28.2",
@@ -27,6 +28,7 @@
     "react-dom": "^19.2.8",
     "tailwindcss": "^4.3.3",
     "tsx": "^4.23.12",
+    "vite": "^8.2.0",
     "zod": "^4.4.3"
   },
   "devDependencies": {
@@ -36,11 +38,9 @@
     "@types/express": "^5.0.6",
     "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^26.4.0",
-    "@vitejs/plugin-react": "^6.0.4",
     "eslint": "^10.8.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.3",
-    "globals": "^17.7.0",
-    "vite": "^8.2.0"
+    "globals": "^17.7.0"
   }
 }
