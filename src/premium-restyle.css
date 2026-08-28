@@ -1,0 +1,265 @@
+/* =========================================================
+   STHAYU VENTURES — Premium Visual System
+   Deep black background. White typography. Restrained elegance.
+   ========================================================= */
+
+.sv-v2 {
+  --sv-bg: #050505;
+  --sv-bg-soft: #0a0a0a;
+  --sv-ink: #fafafa;
+  --sv-muted: #a1a1aa;
+  --sv-faint: #71717a;
+  --sv-line: rgba(255, 255, 255, 0.06);
+  --sv-line-hover: rgba(255, 255, 255, 0.12);
+  min-height: 100vh;
+  background: #050505 !important;
+  color: var(--sv-ink);
+}
+
+/* Ambient background — very subtle */
+.sv-v2 .persistent-3d-environment {
+  opacity: 0.15;
+  background: transparent !important;
+  filter: saturate(0);
+}
+
+.sv-v2 .ambient-grid {
+  opacity: 0.25;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px) !important;
+  background-size: 80px 80px !important;
+  mask-image: radial-gradient(circle at 50% 20%, black, transparent 70%);
+}
+
+.sv-v2 .ambient-orb { filter: blur(140px); opacity: 0.25; }
+.sv-v2 .ambient-orb--one { background: rgba(255, 255, 255, 0.02) !important; }
+.sv-v2 .ambient-orb--two { background: rgba(255, 255, 255, 0.015) !important; }
+.sv-v2 .ambient-orb--three { background: rgba(255, 255, 255, 0.01) !important; }
+.sv-v2 .ambient-orb--four { background: transparent !important; }
+.sv-v2 .ambient-ring { border-color: rgba(255, 255, 255, 0.04) !important; box-shadow: none !important; }
+.sv-v2 .ambient-node { opacity: 0.15; box-shadow: 0 0 8px rgba(255, 255, 255, 0.1) !important; }
+.sv-v2 .ambient-rail { opacity: 0.1; }
+.sv-v2 .ambient-beam { opacity: 0.06; }
+.sv-v2 .ambient-light { opacity: 0.08; }
+
+/* ========== TYPOGRAPHY OVERRIDES ========== */
+
+.sv-v2 h1, .sv-v2 h2, .sv-v2 h3, .sv-v2 h4 {
+  letter-spacing: -0.03em;
+  color: #fafafa !important;
+}
+
+.sv-v2 h2 {
+  text-wrap: balance;
+}
+
+.sv-v2 p {
+  text-wrap: pretty;
+  color: #a1a1aa !important;
+}
+
+.sv-v2 .text-white { color: #fafafa !important; }
+.sv-v2 .text-slate-200, .sv-v2 .text-slate-300 { color: #d4d4d8 !important; }
+.sv-v2 .text-slate-400 { color: #a1a1aa !important; }
+.sv-v2 .text-slate-500 { color: #71717a !important; }
+
+.sv-v2 .text-cyan-100,
+.sv-v2 .text-cyan-200,
+.sv-v2 .text-cyan-300 { color: #d4d4d8 !important; }
+
+.sv-v2 .text-emerald-300,
+.sv-v2 .text-emerald-400 { color: #86efac !important; }
+
+.sv-v2 .text-blue-300,
+.sv-v2 .text-blue-400 { color: #93c5fd !important; }
+
+.sv-v2 .text-red-400,
+.sv-v2 .text-red-300 { color: #fca5a5 !important; }
+
+/* ========== SECTION BACKGROUNDS ========== */
+
+.sv-v2 main > section,
+.sv-v2 main > div > section {
+  position: relative;
+  isolation: isolate;
+  background: transparent !important;
+}
+
+.sv-v2 main > section:not(#hero)::before,
+.sv-v2 main > div > section:not(#hero)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: transparent;
+  pointer-events: none;
+}
+
+/* ========== NAVBAR ========== */
+
+.sv-v2 header > div,
+.sv-v2 header .bg-\[\#05070a\]\/85,
+.sv-v2 header .bg-\[\#05070a\]\/95 {
+  background: rgba(5, 5, 5, 0.80) !important;
+  border-color: rgba(255, 255, 255, 0.06) !important;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.04), 0 20px 60px rgba(0,0,0,0.5) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+}
+.sv-v2 header .text-white { color: #fafafa !important; }
+
+/* ========== CARDS & PANELS ========== */
+
+.sv-v2 .cinematic-panel,
+.sv-v2 .deep-panel,
+.sv-v2 .process-node,
+.sv-v2 .metric-badge,
+.sv-v2 .glass-chip {
+  background: rgba(255, 255, 255, 0.02) !important;
+  color: #fafafa !important;
+  border-color: rgba(255, 255, 255, 0.06) !important;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.04), 0 2px 8px rgba(0,0,0,0.3) !important;
+}
+
+.sv-v2 .cinematic-panel,
+.sv-v2 .deep-panel {
+  backdrop-filter: blur(12px);
+}
+
+.sv-v2 .cinematic-panel:hover,
+.sv-v2 .deep-panel:hover,
+.sv-v2 .process-node:hover,
+.sv-v2 .metric-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.08), 0 8px 32px rgba(0,0,0,0.4) !important;
+}
+
+/* ========== MEDIA ========== */
+
+.sv-v2 .media-shell,
+.sv-v2 .video-frame,
+.sv-v2 .business-video-shell {
+  border-color: rgba(255, 255, 255, 0.06) !important;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.04), 0 20px 60px rgba(0,0,0,0.4) !important;
+}
+
+.sv-v2 .media-shell img,
+.sv-v2 .video-frame video,
+.sv-v2 .business-video-shell video {
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.5s ease;
+}
+.sv-v2 .media-shell:hover img,
+.sv-v2 .video-frame:hover video,
+.sv-v2 .business-video-shell:hover video {
+  transform: scale(1.02);
+}
+
+/* ========== INTERACTIVE ELEMENTS ========== */
+
+.interactive-tilt {
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.sv-v2 .group,
+.sv-v2 .interactive-tilt {
+  transform-style: preserve-3d;
+}
+.sv-v2 .group {
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.sv-v2 .group:hover {
+  transform: translateY(-3px);
+}
+.sv-v2 button,
+.sv-v2 a {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.sv-v2 [id="portfolio"] img,
+.sv-v2 [id="interactive-showcase"] img,
+.sv-v2 [id="showcase"] img {
+  transition: transform 0.65s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.4s ease;
+}
+.sv-v2 [id="portfolio"] .group:hover img,
+.sv-v2 [id="interactive-showcase"] .group:hover img,
+.sv-v2 [id="showcase"] .group:hover img {
+  transform: scale(1.03);
+}
+
+/* ========== HERO ========== */
+
+.sv-v2 #hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #050505 !important;
+}
+
+.sv-v2 #hero > section { width: 100%; }
+.sv-v2 #hero h1 { color: #fafafa !important; }
+.sv-v2 #hero p { color: #a1a1aa !important; }
+
+.sv-v2 #hero .glass-chip {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border-color: rgba(255, 255, 255, 0.06) !important;
+  color: #d4d4d8 !important;
+}
+
+.sv-v2 #hero a[href="#assessment"] {
+  background: #fafafa !important;
+  color: #050505 !important;
+}
+.sv-v2 #hero a[href="#assessment"]:hover {
+  background: #ffffff !important;
+}
+
+.sv-v2 #hero a[href="#services"] {
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #fafafa !important;
+}
+.sv-v2 #hero a[href="#services"]:hover {
+  background: rgba(255, 255, 255, 0.04) !important;
+}
+
+.sv-v2 #hero .rounded-2xl.border {
+  background: rgba(255, 255, 255, 0.02) !important;
+  border-color: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.04), 0 20px 60px rgba(0,0,0,0.5);
+}
+
+/* ========== FOOTER ========== */
+
+.sv-v2 footer {
+  background: #030303 !important;
+  border-color: rgba(255, 255, 255, 0.06) !important;
+  color: #fafafa !important;
+}
+.sv-v2 footer p,
+.sv-v2 footer .text-slate-400,
+.sv-v2 footer .text-slate-500 {
+  color: #71717a !important;
+}
+
+/* ========== OVERRIDE GENERIC LIGHT BACKGROUNDS ========== */
+
+.sv-v2 [class*="bg-white"],
+.sv-v2 [class*="bg-[#f"],
+.sv-v2 [class*="bg-[#e"] {
+  background-color: rgba(255, 255, 255, 0.03) !important;
+  color: #fafafa !important;
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 640px) {
+  .sv-v2 #hero { min-height: 100vh; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sv-v2 *, .sv-v2 *::before, .sv-v2 *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

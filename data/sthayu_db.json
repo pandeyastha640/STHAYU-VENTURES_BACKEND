@@ -1,0 +1,652 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_01",
+      "email": "admin@sthayuventures.com",
+      "passwordHash": "$2b$10$qZ9nJQzdxjDsOOGUbzzdp.KS2r7Jq87KSWWGzQSCHCXJFDqUVkCcy",
+      "name": "Sthayu Systems Administrator",
+      "role": "admin",
+      "createdAt": "2026-08-27T15:57:40.568Z",
+      "updatedAt": "2026-08-27T15:57:40.569Z"
+    }
+  ],
+  "leads": [
+    {
+      "id": "lead_1787846394571_de165",
+      "name": "Priya Desai",
+      "email": "priya@growthventures.com",
+      "company": "GrowthVentures",
+      "teamSize": "50-250 Employees",
+      "source": "assessment",
+      "status": "qualified",
+      "score": 91,
+      "notes": "Diagnostic: Multi-System Data Sync & Reconciliation | Stack: PostgreSQL, Salesforce",
+      "createdAt": "2026-08-27T15:59:54.571Z",
+      "updatedAt": "2026-08-27T15:59:54.571Z"
+    },
+    {
+      "id": "lead_1787846341793_z2c9s",
+      "name": "Vikram Mehta",
+      "email": "vikram@fintech.co",
+      "company": "FinTech Ops",
+      "source": "booking",
+      "status": "qualified",
+      "score": 85,
+      "notes": "Strategy Call booked for: 2026-09-02 (14:00 IST)",
+      "createdAt": "2026-08-27T15:59:01.793Z",
+      "updatedAt": "2026-08-27T16:12:28.473Z"
+    },
+    {
+      "id": "lead_1787846341791_tdsvu",
+      "name": "Meera Patel",
+      "email": "meera@techcorp.in",
+      "company": "TechCorp Global",
+      "source": "contact",
+      "status": "new",
+      "score": 70,
+      "notes": "Enquiry Subject: Autonomous Support Integration RFP | Type: enterprise_quote",
+      "createdAt": "2026-08-27T15:59:01.791Z",
+      "updatedAt": "2026-08-27T16:12:28.472Z"
+    },
+    {
+      "id": "lead_1787846341790_76usv",
+      "name": "Aarav Sharma",
+      "email": "aarav@enterprise-scale.io",
+      "company": "Scale Systems Ltd",
+      "teamSize": "50-250 Employees",
+      "source": "assessment",
+      "status": "qualified",
+      "score": 88,
+      "notes": "Diagnostic: Lead Qualification & Sales Follow-Up | Stack: HubSpot, Slack, PostgreSQL",
+      "createdAt": "2026-08-27T15:59:01.789Z",
+      "updatedAt": "2026-08-27T16:12:28.470Z"
+    }
+  ],
+  "assessments": [
+    {
+      "id": "asm_1787847148471_olprl",
+      "leadId": "lead_1787846341790_76usv",
+      "name": "Aarav Sharma",
+      "email": "aarav@enterprise-scale.io",
+      "company": "Scale Systems Ltd",
+      "teamSize": "50-250 Employees",
+      "primaryFriction": "Lead Qualification & Sales Follow-Up",
+      "currentStack": "HubSpot, Slack, PostgreSQL",
+      "bottleneckScore": 88,
+      "targetRoiMultiplier": "4.5x",
+      "blueprintSummary": {
+        "frictionAnalysis": "High manual drag identified in \"Lead Qualification & Sales Follow-Up\". Existing multi-step human handoffs can be replaced with autonomous event orchestration.",
+        "recommendedAgents": [
+          "STH-SDR-01",
+          "STH-VOX-04"
+        ],
+        "recommendedWorkflows": [
+          "WF-LEAD-QUAL-01",
+          "WF-DATA-SYNC-02"
+        ],
+        "estimatedHoursSavedPerWeek": 35,
+        "targetImplementationDays": 14
+      },
+      "status": "blueprint_dispatched",
+      "createdAt": "2026-08-27T16:12:28.471Z"
+    },
+    {
+      "id": "asm_1787846394572_qa6l6",
+      "leadId": "lead_1787846394571_de165",
+      "name": "Priya Desai",
+      "email": "priya@growthventures.com",
+      "company": "GrowthVentures",
+      "teamSize": "50-250 Employees",
+      "primaryFriction": "Multi-System Data Sync & Reconciliation",
+      "currentStack": "PostgreSQL, Salesforce",
+      "bottleneckScore": 91,
+      "targetRoiMultiplier": "5.0x",
+      "blueprintSummary": {
+        "frictionAnalysis": "High manual drag identified in \"Multi-System Data Sync & Reconciliation\". Existing multi-step human handoffs can be replaced with autonomous event orchestration.",
+        "recommendedAgents": [
+          "STH-OPS-03"
+        ],
+        "recommendedWorkflows": [
+          "WF-DATA-SYNC-02",
+          "WF-GUARD-03"
+        ],
+        "estimatedHoursSavedPerWeek": 45,
+        "targetImplementationDays": 21
+      },
+      "status": "blueprint_dispatched",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-08-27T15:59:54.572Z"
+    },
+    {
+      "id": "asm_1787846341790_f63wv",
+      "leadId": "lead_1787846341790_76usv",
+      "name": "Aarav Sharma",
+      "email": "aarav@enterprise-scale.io",
+      "company": "Scale Systems Ltd",
+      "teamSize": "50-250 Employees",
+      "primaryFriction": "Lead Qualification & Sales Follow-Up",
+      "currentStack": "HubSpot, Slack, PostgreSQL",
+      "bottleneckScore": 88,
+      "targetRoiMultiplier": "4.5x",
+      "blueprintSummary": {
+        "frictionAnalysis": "High manual drag identified in \"Lead Qualification & Sales Follow-Up\". Existing multi-step human handoffs can be replaced with autonomous event orchestration.",
+        "recommendedAgents": [
+          "STH-SDR-01",
+          "STH-VOX-04"
+        ],
+        "recommendedWorkflows": [
+          "WF-LEAD-QUAL-01",
+          "WF-DATA-SYNC-02"
+        ],
+        "estimatedHoursSavedPerWeek": 35,
+        "targetImplementationDays": 14
+      },
+      "status": "blueprint_dispatched",
+      "createdAt": "2026-08-27T15:59:01.790Z"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "cnt_1787847148472_zhhk5",
+      "leadId": "lead_1787846341791_tdsvu",
+      "name": "Meera Patel",
+      "email": "meera@techcorp.in",
+      "company": "TechCorp Global",
+      "subject": "Autonomous Support Integration RFP",
+      "message": "We need Tier-1 deflection integrated with our Zendesk instance.",
+      "enquiryType": "enterprise_quote",
+      "status": "unread",
+      "createdAt": "2026-08-27T16:12:28.472Z"
+    },
+    {
+      "id": "cnt_1787846341792_uks1d",
+      "leadId": "lead_1787846341791_tdsvu",
+      "name": "Meera Patel",
+      "email": "meera@techcorp.in",
+      "company": "TechCorp Global",
+      "subject": "Autonomous Support Integration RFP",
+      "message": "We need Tier-1 deflection integrated with our Zendesk instance.",
+      "enquiryType": "enterprise_quote",
+      "status": "unread",
+      "createdAt": "2026-08-27T15:59:01.792Z"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "bkg_1787847148473_i2wtg",
+      "leadId": "lead_1787846341793_z2c9s",
+      "name": "Vikram Mehta",
+      "email": "vikram@fintech.co",
+      "company": "FinTech Ops",
+      "requestedDate": "2026-09-02",
+      "timeSlot": "14:00 IST",
+      "notes": "Review data reconciliation pipeline",
+      "status": "pending",
+      "createdAt": "2026-08-27T16:12:28.473Z"
+    },
+    {
+      "id": "bkg_1787846341793_82lve",
+      "leadId": "lead_1787846341793_z2c9s",
+      "name": "Vikram Mehta",
+      "email": "vikram@fintech.co",
+      "company": "FinTech Ops",
+      "requestedDate": "2026-09-02",
+      "timeSlot": "14:00 IST",
+      "notes": "Review data reconciliation pipeline",
+      "status": "pending",
+      "createdAt": "2026-08-27T15:59:01.793Z"
+    }
+  ],
+  "aiAgents": [
+    {
+      "id": "agent_sdr_01",
+      "code": "STH-SDR-01",
+      "name": "Autonomous Revenue & SDR Agent",
+      "category": "revenue_growth",
+      "modelTier": "Enterprise Neural v4",
+      "status": "active",
+      "description": "Multi-channel lead qualification, intent parsing, calendar routing, and CRM pipeline sync.",
+      "capabilities": [
+        "Inbound Intent Parsing",
+        "ICP Scoring",
+        "Automated Booking",
+        "CRM Sync"
+      ],
+      "executionCount": 1422,
+      "successRate": 99.4,
+      "avgLatencyMs": 420,
+      "createdAt": "2026-08-27T15:57:40.569Z"
+    },
+    {
+      "id": "agent_sup_02",
+      "code": "STH-SUP-02",
+      "name": "Tier-1 Autonomous Support Engine",
+      "category": "support_ops",
+      "modelTier": "Zero-Latency Hybrid RAG",
+      "status": "active",
+      "description": "Instant resolution across documentation, knowledge bases, ticketing escalation, and live telemetry.",
+      "capabilities": [
+        "RAG Knowledge Retrieval",
+        "Ticket Triage",
+        "Deflection Routing",
+        "Human Escalation"
+      ],
+      "executionCount": 3840,
+      "successRate": 98.9,
+      "avgLatencyMs": 310,
+      "createdAt": "2026-08-27T15:57:40.569Z"
+    },
+    {
+      "id": "agent_ops_03",
+      "code": "STH-OPS-03",
+      "name": "Operations & Data Reconciliation Agent",
+      "category": "data_reconciliation",
+      "modelTier": "Deterministic SQL / ETL Core",
+      "status": "active",
+      "description": "Cross-platform data reconciliation, invoice OCR, inventory balancing, and automated webhook dispatch.",
+      "capabilities": [
+        "SQL Cross-Join Verification",
+        "Discrepancy Flagging",
+        "Webhook Dispatch",
+        "Ledger Sync"
+      ],
+      "executionCount": 9202,
+      "successRate": 99.9,
+      "avgLatencyMs": 180,
+      "createdAt": "2026-08-27T15:57:40.569Z"
+    },
+    {
+      "id": "agent_vox_04",
+      "code": "STH-VOX-04",
+      "name": "Sub-200ms Voice Telephony Agent",
+      "category": "voice_telephony",
+      "modelTier": "Ultra-Low Latency Audio",
+      "status": "active",
+      "description": "Real-time voice qualification, appointment confirmations, and structured call transcription.",
+      "capabilities": [
+        "Full-Duplex Speech",
+        "Noise Filtration",
+        "Real-Time Telephony",
+        "CRM Call Logging"
+      ],
+      "executionCount": 650,
+      "successRate": 97.8,
+      "avgLatencyMs": 195,
+      "createdAt": "2026-08-27T15:57:40.569Z"
+    }
+  ],
+  "agentExecutions": [
+    {
+      "id": "exec_1787847148475_aehlv",
+      "agentId": "agent_ops_03",
+      "agentCode": "STH-OPS-03",
+      "triggerSource": "api_direct",
+      "inputPayload": {
+        "tableA": "orders",
+        "tableB": "invoices"
+      },
+      "outputPayload": {
+        "reconciledRecords": 142,
+        "discrepanciesFound": 0,
+        "verifiedChecksum": "0x8f2a1b9e",
+        "syncedSystems": [
+          "PostgreSQL",
+          "HubSpot",
+          "Stripe"
+        ]
+      },
+      "status": "success",
+      "latencyMs": 279,
+      "tokensUsed": 448,
+      "createdAt": "2026-08-27T16:12:28.475Z"
+    },
+    {
+      "id": "exec_1787847148474_intnc",
+      "agentId": "agent_sdr_01",
+      "agentCode": "STH-SDR-01",
+      "triggerSource": "test_suite",
+      "inputPayload": {
+        "leadEmail": "newlead@growth.com",
+        "intentScore": 0.94
+      },
+      "outputPayload": {
+        "intent": "HIGH_QUALIFIED_INBOUND",
+        "confidenceScore": 0.96,
+        "actionTaken": "CALENDAR_ROUTED_AND_CRM_ENRICHED",
+        "extractedFields": {
+          "leadScore": 92,
+          "recommendedTier": "Growth Engine",
+          "nextStep": "Discovery Blueprint Call"
+        }
+      },
+      "status": "success",
+      "latencyMs": 471,
+      "tokensUsed": 335,
+      "createdAt": "2026-08-27T16:12:28.474Z"
+    },
+    {
+      "id": "exec_1787846341794_u77y1",
+      "agentId": "agent_ops_03",
+      "agentCode": "STH-OPS-03",
+      "triggerSource": "api_direct",
+      "inputPayload": {
+        "tableA": "orders",
+        "tableB": "invoices"
+      },
+      "outputPayload": {
+        "reconciledRecords": 142,
+        "discrepanciesFound": 0,
+        "verifiedChecksum": "0x8f2a1b9e",
+        "syncedSystems": [
+          "PostgreSQL",
+          "HubSpot",
+          "Stripe"
+        ]
+      },
+      "status": "success",
+      "latencyMs": 204,
+      "tokensUsed": 373,
+      "createdAt": "2026-08-27T15:59:01.794Z"
+    },
+    {
+      "id": "exec_1787846341794_hl4q3",
+      "agentId": "agent_sdr_01",
+      "agentCode": "STH-SDR-01",
+      "triggerSource": "test_suite",
+      "inputPayload": {
+        "leadEmail": "newlead@growth.com",
+        "intentScore": 0.94
+      },
+      "outputPayload": {
+        "intent": "HIGH_QUALIFIED_INBOUND",
+        "confidenceScore": 0.96,
+        "actionTaken": "CALENDAR_ROUTED_AND_CRM_ENRICHED",
+        "extractedFields": {
+          "leadScore": 92,
+          "recommendedTier": "Growth Engine",
+          "nextStep": "Discovery Blueprint Call"
+        }
+      },
+      "status": "success",
+      "latencyMs": 505,
+      "tokensUsed": 390,
+      "createdAt": "2026-08-27T15:59:01.794Z"
+    }
+  ],
+  "workflows": [
+    {
+      "id": "wf_lead_ingest_01",
+      "code": "WF-LEAD-QUAL-01",
+      "name": "Lead Ingestion & Diagnostic Pipeline",
+      "triggerType": "webhook",
+      "webhookPath": "/api/v1/workflows/webhooks/lead-ingest",
+      "active": true,
+      "executionCount": 342,
+      "lastRunAt": "2026-08-27T16:12:28.475Z",
+      "description": "Validates incoming diagnostic submissions, computes bottleneck scores, and sends architectural blueprint.",
+      "createdAt": "2026-08-27T15:57:40.569Z"
+    },
+    {
+      "id": "wf_data_sync_02",
+      "code": "WF-DATA-SYNC-02",
+      "name": "Bi-Directional CRM & ERP Event Sync",
+      "triggerType": "event",
+      "active": true,
+      "executionCount": 1890,
+      "lastRunAt": "2026-08-27T15:57:40.569Z",
+      "description": "Syncs deal stages and contact records between HubSpot, PostgreSQL, and internal databases.",
+      "createdAt": "2026-08-27T15:57:40.569Z"
+    },
+    {
+      "id": "wf_agent_guardrail_03",
+      "code": "WF-GUARD-03",
+      "name": "Agent Output Safety & Escalation Guardrail",
+      "triggerType": "event",
+      "active": true,
+      "executionCount": 5200,
+      "lastRunAt": "2026-08-27T15:57:40.569Z",
+      "description": "Filters output confidence, redacts sensitive tokens, and flags edge cases for human review.",
+      "createdAt": "2026-08-27T15:57:40.569Z"
+    }
+  ],
+  "workflowExecutions": [
+    {
+      "id": "wfx_1787847148475_eo19o",
+      "workflowId": "wf_lead_ingest_01",
+      "workflowCode": "WF-LEAD-QUAL-01",
+      "status": "completed",
+      "triggerPayload": {
+        "test": true,
+        "source": "unit_test"
+      },
+      "stepResults": [
+        {
+          "stepName": "Payload Validation & Schema Check",
+          "status": "passed",
+          "durationMs": 14
+        },
+        {
+          "stepName": "CRM Event & Database Idempotency Check",
+          "status": "passed",
+          "durationMs": 28
+        },
+        {
+          "stepName": "Agent Guardrail & Dispatch",
+          "status": "passed",
+          "durationMs": 65
+        },
+        {
+          "stepName": "Webhook Response Acknowledgment",
+          "status": "passed",
+          "durationMs": 12
+        }
+      ],
+      "latencyMs": 119,
+      "createdAt": "2026-08-27T16:12:28.475Z"
+    },
+    {
+      "id": "wfx_1787846341795_aig02",
+      "workflowId": "wf_lead_ingest_01",
+      "workflowCode": "WF-LEAD-QUAL-01",
+      "status": "completed",
+      "triggerPayload": {
+        "test": true,
+        "source": "unit_test"
+      },
+      "stepResults": [
+        {
+          "stepName": "Payload Validation & Schema Check",
+          "status": "passed",
+          "durationMs": 14
+        },
+        {
+          "stepName": "CRM Event & Database Idempotency Check",
+          "status": "passed",
+          "durationMs": 28
+        },
+        {
+          "stepName": "Agent Guardrail & Dispatch",
+          "status": "passed",
+          "durationMs": 65
+        },
+        {
+          "stepName": "Webhook Response Acknowledgment",
+          "status": "passed",
+          "durationMs": 12
+        }
+      ],
+      "latencyMs": 119,
+      "createdAt": "2026-08-27T15:59:01.795Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "aud_1787847148475_plqsw",
+      "action": "WORKFLOW_TRIGGERED",
+      "resource": "workflow:WF-LEAD-QUAL-01",
+      "details": {
+        "executionId": "wfx_1787847148475_eo19o",
+        "stepsExecuted": 4
+      },
+      "createdAt": "2026-08-27T16:12:28.475Z"
+    },
+    {
+      "id": "aud_1787847148475_3bsq9",
+      "action": "AGENT_EXECUTION_COMPLETED",
+      "resource": "agent:STH-OPS-03",
+      "details": {
+        "executionId": "exec_1787847148475_aehlv",
+        "status": "success",
+        "tokensUsed": 448,
+        "latencyMs": 279
+      },
+      "createdAt": "2026-08-27T16:12:28.475Z"
+    },
+    {
+      "id": "aud_1787847148474_avmzj",
+      "action": "AGENT_EXECUTION_COMPLETED",
+      "resource": "agent:STH-SDR-01",
+      "details": {
+        "executionId": "exec_1787847148474_intnc",
+        "status": "success",
+        "tokensUsed": 335,
+        "latencyMs": 471
+      },
+      "createdAt": "2026-08-27T16:12:28.474Z"
+    },
+    {
+      "id": "aud_1787847148474_7l98l",
+      "action": "BOOKING_CREATED",
+      "resource": "booking:bkg_1787847148473_i2wtg",
+      "details": {
+        "leadId": "lead_1787846341793_z2c9s",
+        "email": "vikram@fintech.co",
+        "date": "2026-09-02"
+      },
+      "createdAt": "2026-08-27T16:12:28.474Z"
+    },
+    {
+      "id": "aud_1787847148473_h568p",
+      "action": "CONTACT_ENQUIRY_CREATED",
+      "resource": "contact:cnt_1787847148472_zhhk5",
+      "details": {
+        "leadId": "lead_1787846341791_tdsvu",
+        "email": "meera@techcorp.in",
+        "subject": "Autonomous Support Integration RFP"
+      },
+      "createdAt": "2026-08-27T16:12:28.473Z"
+    },
+    {
+      "id": "aud_1787847148471_c7qya",
+      "action": "ASSESSMENT_SUBMITTED",
+      "resource": "assessment:asm_1787847148471_olprl",
+      "details": {
+        "leadId": "lead_1787846341790_76usv",
+        "email": "aarav@enterprise-scale.io",
+        "primaryFriction": "Lead Qualification & Sales Follow-Up",
+        "score": 88
+      },
+      "createdAt": "2026-08-27T16:12:28.471Z"
+    },
+    {
+      "id": "aud_1787846405994_adgui",
+      "userId": "usr_admin_01",
+      "userEmail": "admin@sthayuventures.com",
+      "action": "USER_LOGIN_SUCCESS",
+      "resource": "user:usr_admin_01",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-08-27T16:00:05.994Z"
+    },
+    {
+      "id": "aud_1787846400609_eaih2",
+      "userId": "usr_admin_01",
+      "userEmail": "admin@sthayuventures.com",
+      "action": "USER_LOGIN_SUCCESS",
+      "resource": "user:usr_admin_01",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-08-27T16:00:00.609Z"
+    },
+    {
+      "id": "aud_1787846394572_6datq",
+      "action": "ASSESSMENT_SUBMITTED",
+      "resource": "assessment:asm_1787846394572_qa6l6",
+      "details": {
+        "leadId": "lead_1787846394571_de165",
+        "email": "priya@growthventures.com",
+        "primaryFriction": "Multi-System Data Sync & Reconciliation",
+        "score": 91
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-08-27T15:59:54.572Z"
+    },
+    {
+      "id": "aud_1787846341795_kvy76",
+      "action": "WORKFLOW_TRIGGERED",
+      "resource": "workflow:WF-LEAD-QUAL-01",
+      "details": {
+        "executionId": "wfx_1787846341795_aig02",
+        "stepsExecuted": 4
+      },
+      "createdAt": "2026-08-27T15:59:01.795Z"
+    },
+    {
+      "id": "aud_1787846341794_xfnyc",
+      "action": "AGENT_EXECUTION_COMPLETED",
+      "resource": "agent:STH-OPS-03",
+      "details": {
+        "executionId": "exec_1787846341794_u77y1",
+        "status": "success",
+        "tokensUsed": 373,
+        "latencyMs": 204
+      },
+      "createdAt": "2026-08-27T15:59:01.794Z"
+    },
+    {
+      "id": "aud_1787846341794_com8r",
+      "action": "AGENT_EXECUTION_COMPLETED",
+      "resource": "agent:STH-SDR-01",
+      "details": {
+        "executionId": "exec_1787846341794_hl4q3",
+        "status": "success",
+        "tokensUsed": 390,
+        "latencyMs": 505
+      },
+      "createdAt": "2026-08-27T15:59:01.794Z"
+    },
+    {
+      "id": "aud_1787846341793_40l84",
+      "action": "BOOKING_CREATED",
+      "resource": "booking:bkg_1787846341793_82lve",
+      "details": {
+        "leadId": "lead_1787846341793_z2c9s",
+        "email": "vikram@fintech.co",
+        "date": "2026-09-02"
+      },
+      "createdAt": "2026-08-27T15:59:01.793Z"
+    },
+    {
+      "id": "aud_1787846341792_ty2ut",
+      "action": "CONTACT_ENQUIRY_CREATED",
+      "resource": "contact:cnt_1787846341792_uks1d",
+      "details": {
+        "leadId": "lead_1787846341791_tdsvu",
+        "email": "meera@techcorp.in",
+        "subject": "Autonomous Support Integration RFP"
+      },
+      "createdAt": "2026-08-27T15:59:01.792Z"
+    },
+    {
+      "id": "aud_1787846341790_n5qba",
+      "action": "ASSESSMENT_SUBMITTED",
+      "resource": "assessment:asm_1787846341790_f63wv",
+      "details": {
+        "leadId": "lead_1787846341790_76usv",
+        "email": "aarav@enterprise-scale.io",
+        "primaryFriction": "Lead Qualification & Sales Follow-Up",
+        "score": 88
+      },
+      "createdAt": "2026-08-27T15:59:01.790Z"
+    }
+  ],
+  "systemMetrics": []
+}

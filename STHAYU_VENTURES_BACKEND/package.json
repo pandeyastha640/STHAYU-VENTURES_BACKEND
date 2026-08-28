@@ -1,0 +1,42 @@
+{
+  "name": "sthayu-ventures-backend",
+  "version": "1.0.0",
+  "description": "Production-Ready Standalone Backend for Sthayu Ventures Autonomous Operating System",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "esbuild src/index.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/index.cjs",
+    "start": "node dist/index.cjs",
+    "test": "tsx tests/runTests.ts",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.7",
+    "esbuild": "^0.28.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "tsx": "^4.23.12",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^3.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^26.4.0",
+    "typescript": "^5.7.3"
+  },
+  "keywords": [
+    "sthayu-ventures",
+    "backend",
+    "ai-agents",
+    "enterprise-api",
+    "lead-scoring",
+    "micro-agent-mesh"
+  ],
+  "author": "Sthayu Ventures Engineering Team",
+  "license": "UNLICENSED"
+}

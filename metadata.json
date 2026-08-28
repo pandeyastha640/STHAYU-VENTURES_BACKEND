@@ -1,0 +1,6 @@
+{
+  "name": "Sthayu Ventures",
+  "description": "AI-powered automation and SaaS solutions for business operations",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
